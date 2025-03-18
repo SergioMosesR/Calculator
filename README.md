@@ -37,10 +37,6 @@ Jika ingin membangun aplikasi untuk produksi:
 npm run build
 ```
 
-## 📜 Lisensi
-Proyek ini berada di bawah lisensi MIT. Silakan gunakan dan kembangkan sesuai kebutuhan.
-
----
 
 🎯 **Enjoy coding!** 🚀
 
