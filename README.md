@@ -1,38 +1,46 @@
-# sv
+# Svelte Calculator
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Svelte Calculator adalah aplikasi kalkulator berbasis web yang dibuat menggunakan Svelte.
 
-## Creating a project
+## 🚀 Cara Clone dan Menjalankan Project
 
-If you're seeing this, you've probably already done this step. Congrats!
-
+### 1. Clone Repository
 ```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+git clone https://github.com/SergioMosesR/Calculator.git
 ```
 
-## Developing
+### 2. Masuk ke Folder Project
+```bash
+cd Calculator
+```
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### 3. Install Dependencies
+```bash
+npm install
+```
 
+### 4. Jalankan Project
 ```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
+Kemudian, buka **http://localhost:5173/** di browser Anda.
 
-## Building
+## 📦 Dependencies yang Digunakan
 
-To create a production version of your app:
+- **Svelte** - Framework frontend ringan.
+- **mathjs** - Library untuk perhitungan matematika.
+- **Vanta.js** - Efek background animasi.
 
+## 🔧 Build untuk Produksi
+Jika ingin membangun aplikasi untuk produksi:
 ```bash
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+## 📜 Lisensi
+Proyek ini berada di bawah lisensi MIT. Silakan gunakan dan kembangkan sesuai kebutuhan.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+---
+
+🎯 **Enjoy coding!** 🚀
+
