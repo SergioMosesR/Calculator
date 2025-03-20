@@ -37,19 +37,20 @@
 
     // fungsi akar
     function sqrt() {
-        try {
-            display = evaluate(`sqrt(${display})`);
-        } catch (e) {
-            display = "Error";
+        let lastNumber = display.match(/(\d+(\.\d+)?)$/); // Ambil angka terakhir
+        if (lastNumber) {
+            display = display.replace(
+                /(\d+(\.\d+)?)$/,
+                `sqrt(${lastNumber[0]})`,
+            );
         }
     }
-
-    // fungsi persen %
+    
+    // fungsi persen
     function percent() {
-        try {
-            display = evaluate(`${display} / 100`);
-        } catch (e) {
-            display = "Error";
+        let lastNumber = display.match(/(\d+(\.\d+)?)$/); // Ambil angka terakhir
+        if (lastNumber) {
+            display = display.replace(/(\d+(\.\d+)?)$/, `(${lastNumber[0]}%)`);
         }
     }
 
@@ -124,7 +125,9 @@
                     <li>{item}</li>
                 {/each}
             </ul>
-            <button class="clearHistory" on:click={clearHistory}>Clear History</button>
+            <button class="clearHistory" on:click={clearHistory}
+                >Clear History</button
+            >
         </div>
     {/if}
 </div>
