@@ -89,8 +89,8 @@
         <div class="buttons">
             <button on:click={percent}>%</button>
             <button on:click={sqrt}>√</button>
-            <button on:click={() => append("/")}>÷</button>
             <button on:click={() => append("^")}>xʸ</button>
+            <button on:click={() => append("/")}>÷</button>
 
             <button on:click={() => append("7")}>7</button>
             <button on:click={() => append("8")}>8</button>
